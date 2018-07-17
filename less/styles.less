@@ -1,0 +1,510 @@
+@import "smart-grid.less";
+.reset();
+
+.wrapper{
+	.wrapper();
+	.sm(padding, 0px);
+}
+@main-color: #9b7d37;
+@button-color: #75B403;
+body{
+	font-family: 'Dosis', sans-serif;
+	width: 100%;
+}
+a{text-decoration: none;}
+.header{
+
+
+	background: url("../images/top-bg.png") no-repeat;
+	background-attachment: fixed;
+	
+	background-size: 100%;
+	
+	
+	/*min-height: 100vh;*/
+    }
+.header-wrap{
+	    .row-flex();		     		
+	    padding: 11px;
+	    min-height: 100vh;
+	    .xs(min-height,50vh);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        &__nav{
+			display: flex;
+			width: 100%;
+			padding: 1px 10px;
+			justify-content: flex-end;
+		}
+		&__nav-link{
+			
+			display:flex;
+			align-items: center;
+			cursor:pointer;        
+        color: #2f1946;
+		font-family: 'Dosis', sans-serif;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		.fa-bars{
+			padding: 6px 19px 6px 8px;
+			font-size: 22px;
+			color:#e22028;
+		}
+
+	}
+	&__logo{
+		/*padding-top: 73px;*/.col();
+		        .size(3.4);
+		        .size-xs(2.5);
+		       /* padding-t1p: 62px;*/
+	}
+	&__title{
+		.col();
+		.size(8);
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+	color: #2f1946;
+	font-family: 'Dosis', sans-serif;
+	font-size: 4vw;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	/*padding-top: 46px;*/
+	letter-spacing: 1.67px;
+	}
+	&__button{
+		.col();
+		        .size(2.1);
+		        .size-md(3);
+		        .size-sm(3.5);
+		        .size-xs(4);
+		        .xs(padding,5px 6px );
+	text-align: center;
+	/*margin-top: 36px;*/
+    padding: 8px 9px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	border-radius: 36px;
+	border: 1px solid #81398b;
+	}
+	&__button-down{
+		.xs(padding,5px 0px );
+		padding:9px 18px ;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+		border-radius: 25px;
+        background-color: #81398b;
+        color: #ffffff;
+        font-family: Dosis;
+        font-size: 1vw;
+        font-weight: 700;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .fa-long-arrow-down{
+        	padding-left: 5px;
+        }
+	}
+	&__blocks{
+		/*margin-top: 54px;*/
+		margin-top: 10px;
+		margin-bottom: -101px;
+		.xs(margin-bottom, 0 );
+		width: 100%;
+
+		.row-flex();
+		justify-content: center;
+        	.block{
+        		.col();
+		        .size(2);
+		        .size-md(3);
+		        .size-sm(3.5);
+		        .size-xs(3);
+		        display: flex;
+		        flex-direction: column;
+		        align-items: center;
+		        justify-content: center;
+        		img{
+        			padding: 46px 0;
+					.xs(padding, 10px 0 );
+					.xs(width, 30px );
+        			width: 78px;
+        		}
+        		span{
+        			font-size: 2vw;
+        			color: #fff;
+        			font-family: Dosis, sans-serif;
+        			padding: 24px 0;
+        			.xs(padding, 10px 0);
+        			display: block;
+    				width: 100%;
+    				text-align: center;
+    				background: rgba(0,0,0,0.1);
+        		}
+
+        	}
+        	.world{
+        		box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+				background-color: #fe4a5d;
+				img{
+					padding: 43px 0;
+				}
+				
+        	}
+        	.hearts{
+        		box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+				background-color: #e22028;
+				img{
+					padding: 48px 0;
+				}
+				
+        	}
+        	.icon{
+        		box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+				background-color: #ff6c00;
+				img{
+					padding: 55px 0;
+				}
+			
+        	}
+        }
+    }
+
+.content{
+	background: #fff;
+	margin-top: 180px;
+	.xs(margin-top, 20px);
+	
+	&__block{
+		.row-flex();
+	flex-direction: column;
+	align-items: center;
+		h2{
+			.col();
+			.size(3.3);
+		    .size-md(4.4);
+		    .size-sm(6);
+            .size-xs(3.9);
+			color: #2f1946;
+			/*padding-top: 3px;
+			padding-bottom: 3px;*/
+			font-size: 3vw;
+			/*.xs(padding-left, 10px);*/
+			padding-left: 1.5em;
+			background: url("../images/LogoHeart.png") no-repeat;
+			background-size: auto 100%;
+			/*.xs(background-size, auto 100%);*/
+			text-transform: uppercase;
+			
+		}
+		p{
+			.col();
+			.size(6.5);
+		    .size-md(7);
+		     .size-sm(7);
+		      .size-xs(10);
+		      .xs(font-size,3vw);
+		      .xs(margin-top , 10px);
+            color: #2f1946;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+			
+		
+		}
+			span{
+				.col();
+				.size(6.1);
+color: #fe4a5d;
+font-size: 3vw;
+line-height: 36px;
+text-align: right;
+		}
+		
+	}
+		
+	
+}
+.section{
+	background: url("../images/center-bg.png")no-repeat center;
+	background-size: cover;
+	margin-top:32px;
+
+
+}
+.section-wrap{
+	.row-flex();
+	justify-content: center;
+   
+	&__bg{
+		.col();
+		.size(3.6);
+		.size-md(5);
+		.size-sm(8);
+        .size-xs(10);
+		padding: 6px;
+	   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e41f26+0,ed6a1f+50,f89b17+100 */
+background: #e41f26; /* Old browsers */
+background: -moz-linear-gradient(left, #e41f26 0%, #ed6a1f 50%, #f89b17 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #e41f26 0%,#ed6a1f 50%,#f89b17 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #e41f26 0%,#ed6a1f 50%,#f89b17 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e41f26', endColorstr='#f89b17',GradientType=1 ); /* IE6-9 */
+	
+	}
+	&__button{
+			padding: 10px 0;border-radius: 4px;
+
+color: #ffffff;
+font-size: 11px;
+text-transform: uppercase;
+border: none;
+    .fa-facebook{
+    	padding-right: 5px;
+		}
+    }
+	&__form{
+		display: flex;
+		flex-direction: column;
+		padding: 40px 55px 50px;
+		.xs(padding, 10px);
+		background: #fff;
+		text-align: center;
+		h4{
+			color: #2f1946;
+			font-size: 29px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		hr{
+			width: 99%;
+			margin-top: 15px;
+            border: 1px solid #dcdcdc;
+		}
+		span{
+			color: #9b9b9b;
+			font-size: 12px;
+			text-transform: uppercase;
+			padding: 0 7px;
+			margin: -17px auto 0 auto;
+			background: #fff;
+			
+
+		}
+		.facebook{
+			margin-top:25px;
+			
+background-color: #2f53a3;
+
+
+/* Text style for "S, ign up" */
+
+
+		}
+		form{
+			display: flex;
+		flex-direction: column;
+			input{
+				
+				border-radius: 4px;
+border: 2px solid #dcdcdc;
+				padding: 7px 6px;
+				margin: 4px 0;
+				color: #642f6b;
+				font-size: 12px;
+				letter-spacing: 0.69px; 
+
+		}
+		.confirm{
+			background: #81398b;
+			margin-top:3px;
+		}
+	}
+	}
+}
+.section2{
+	background: url("../images/bottom-bg.png") no-repeat center;
+	background-size: cover;
+	
+	margin-top: 121px;
+}
+.section2-wrap{
+	.row-flex();
+	justify-content: center;
+	&__circle{
+		width: 336px;
+		height:336px;
+		border: 1px solid #fff;
+		border-radius:50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 104px;
+
+		margin-bottom: 120px;
+	}
+	&__block{
+		height: 264px;
+		width: 264px;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		align-items: center;
+		border-radius: 50%;
+		h5{
+			color: #67326e;
+			font-size: 47px;
+			/*margin-top: 75px;*/
+			text-transform: uppercase;
+		}
+		h6{
+			color: #67326e;
+			font-size: 36px;
+			margin-top: -7px;
+
+		}
+		button{
+			color: #ffffff;
+			font-size: 12px;
+			text-transform: uppercase;
+				   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e41f26+0,ed6a1f+50,f89b17+100 */
+			background: #e41f26; /* Old browsers */
+			background: -moz-linear-gradient(left, #e41f26 0%, #ed6a1f 50%, #f89b17 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, #e41f26 0%,#ed6a1f 50%,#f89b17 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, #e41f26 0%,#ed6a1f 50%,#f89b17 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e41f26', endColorstr='#f89b17',GradientType=1 ); /* IE6-9 */
+	     	border: none;
+	     	font-family: Dosis;
+	     	padding: 8px 19px;
+	     	border-radius: 3px;
+	     	margin-top:15px;
+	     	/*margin-bottom: 68px;*/
+		}
+	}
+}
+.section3-wrap{
+	&__form{
+		.row-flex();
+		justify-content: center;
+		align-items: center;
+		margin-top:30px;
+		p{
+			.col();
+			.size(2);
+			.size-md(3.2);
+		    .size-sm(5);
+            .size-xs(8);
+            .xs(text-align, left);
+            .xs(margin-bottom, 10px);
+			color: #00cfae;
+			font-size: 15px;
+			text-align: right;
+		}
+		form{
+			.col();
+			.size(4);
+			.size-md(4);
+		    .size-sm(5);
+            .size-xs(10);
+			display: flex;
+			align-items: center;
+			input{
+				color: #2f1946;
+				font-family: Lato, sans-serif;
+				font-size: 14px;
+				border-radius: 4px;
+				border: 1px solid #cdcdcd;
+				background-color: #ffffff;
+				width:50%;
+				line-height: 31px;
+				padding: 2px 12px;
+
+
+			}
+			button{
+				border-radius: 0 4px 4px 0;
+				background-color: #00cfae;
+				color: #fefefe;
+				font-size: 14px;
+				margin-left: -20px;
+				line-height: 33px;
+				padding: 2px 19px;
+				border: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.footer{
+	background: #fafafa;
+	padding: 5px 0; 
+	margin-top:17px;
+}
+.footer-wrap{
+	
+	.row-flex();
+	justify-content: center;
+	&__menu{
+		.col();
+		.size(7.6);
+		.size-md(10);
+		.size-sm(10);
+		hr{
+			border: 1px solid #d3d3d3;;
+		}
+		ul{
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				li{
+					a{
+						color: #2f1946;				
+						font-size: 16px;
+						line-height: 30px;
+						padding: 5px;
+						&:hover{
+							color: #45124c;
+						};
+					}
+				}
+			}
+		}
+}
+.footer__copyrights{
+		color: #2f1946;
+		font-family: Lato, sans-serif;
+		font-size: 12px;
+		line-height: 24px;
+		padding-bottom: 8px;
+		text-align: center;
+}
+.footer__langs{
+	padding-top: 15px; 
+	ul{
+				display: flex;
+				/*justify-content: space-between;*/
+			}
+}
+.social{
+	position: fixed;
+	left:0;
+	top:35%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: 0 3px 3px 0;
+    background-color: #45124c;
+    li{
+    	a{
+    		i{
+    			padding: 12px;
+    			color: #fff;
+    			font-size: 20px;
+    		}
+    	}
+    }
+}
+
+
+
+
+
